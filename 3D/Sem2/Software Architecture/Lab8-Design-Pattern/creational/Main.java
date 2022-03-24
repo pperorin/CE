@@ -21,9 +21,26 @@ public class Main {
         }
 
         // Expected usage
-//        BookMetadataExporter exporter = new XMLBookMetadataExporter();
-//        exporter.add(TestData.sailboatBook);
-//        exporter.add(TestData.GoFBook);
-//        exporter.export(System.out);
+        BookMetadataExporter exporter = new XMLBookMetadataExporter();
+        exporter.add(TestData.sailboatBook);
+        exporter.add(TestData.GoFBook);
+        exporter.export(System.out);
+
+        //Factory Method
+        BookMetadataExporter exporter2 = null;
+        String exporterType = "JSON";
+        if (exporterType.equals("CSV")) {
+            exporter2 = new CSVBookMetadataExporter();
+        } else if (exporterType.equals("XML")) {
+            exporter2 = new XMLBookMetadataExporter();
+        } else if (exporterType.equals("JSON")) {
+            exporter2 = new JSONBookMetadataExporter();
+        } else {
+            exporter2 = new JSONBookMetadataExporter();
+        }
+
+        exporter2.add(TestData.sailboatBook);
+        exporter2.add(TestData.GoFBook);
+        exporter2.export(System.out);
     }
 }

@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d715c893-2698-4c7e-8309-69367cba9c0c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CSVBookMetadataExporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSONBookMetadataExporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XMLBookMetadataExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookMetadataExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookMetadataExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSONBookMetadataFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/JSONBookMetadataFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creational.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Software Studio/SoftStudio_HTML" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Software Studio/SoftStudio_HTML" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Theory of Computation/Project-Theory-Com" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Theory of Computation/Project-Theory-Com" afterDir="false" />
     </list>

@@ -1,4 +1,4 @@
-package edu.parinya.softarchdesign.structural;
+package structural;
 
 
 public class Main {

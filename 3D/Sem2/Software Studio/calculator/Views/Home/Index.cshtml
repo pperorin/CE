@@ -1,0 +1,421 @@
+﻿@{
+    ViewData["Title"] = "Calculator";
+}
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    function MakeReq(serverpage, objID) {
+        let obj = document.getElementById(objID);
+        xmlhttp.open("GET", serverpage);
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                obj.innerHTML = xmlhttp.responseText;
+                textInput = document.getElementById(objID).innerHTML;
+            }
+        }
+        xmlhttp.send(null);
+    }
+    var textInput = ""
+    var boolVar = false;
+    function put0() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "0"
+            boolVar = false
+        }
+        else {
+            textInput += "0"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put1() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "1"
+            boolVar = false
+        }
+        else {
+            textInput += "1"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put2() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "2"
+            boolVar = false
+        }
+        else {
+            textInput += "2"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put3() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "3"
+            boolVar = false
+        }
+        else {
+            textInput += "3"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put4() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "4"
+            boolVar = false
+        }
+        else {
+            textInput += "4"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put5() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "5"
+            boolVar = false
+        }
+        else {
+            textInput += "5"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put6() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "6"
+            boolVar = false
+        }
+        else {
+            textInput += "6"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put7() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "7"
+            boolVar = false
+        }
+        else {
+            textInput += "7"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put8() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "8"
+            boolVar = false
+        }
+        else {
+            textInput += "8"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function put9() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        if (boolVar == true) {
+            textInput = "9"
+            boolVar = false
+        }
+        else {
+            textInput += "9"
+        }
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putAdd() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        boolVar = false
+        textInput += " + "
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putSub() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        boolVar = false
+        textInput += " - "
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putMultiply() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        boolVar = false
+        textInput += " * "
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putDevide() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        boolVar = false
+        textInput += " / "
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putDot() {
+        if (textInput.length > 38) {
+            alert("Maximum Value Enter!");
+            boolVar = true;
+            textInput = "Enter Number";
+            document.getElementById("numText").innerHTML = textInput;
+            return;
+        }
+        boolVar = false
+        textInput += "."
+        document.getElementById("numText").innerHTML = textInput;
+    }
+    function putClear() {
+        boolVar = false
+        textInput = ""
+        document.getElementById("numText").innerHTML = "Enter Number";
+    }
+    function putEqual() {
+        var lastChar = textInput[textInput.length - 1];
+        if (lastChar == " " || lastChar == ".") {
+            alert("Error input!");
+        }
+        else {
+            boolVar = true;
+            MakeReq('/Home/Calculate/?number=' + textInput.replaceAll(" + ", " %2B "), 'numText'); return false;
+        }
+    }
+</script>
+<style>
+    button {
+        color: white;
+        border-radius: 10px;
+        width: 90px;
+        height: 90px;
+        border: none;
+        margin: 5px 5px;
+        box-shadow: 3px 3px 3px #cccccc;
+        font-size: 30px;
+        background-color: #3F4557;
+    }
+
+    #output {
+    @*width:300px;*@height: 60px;
+        width: 400px;
+        margin: 20px 0;
+        font-size: 40px;
+        padding: 5px 8px;
+        color: white;
+        border-radius: 8px;
+        display: block;
+        background-color: #F484A2;
+        box-shadow: 1px 2px 2px #b7c0c4;
+        background-color: #F484A2;
+
+    }
+
+    .operator {
+        background-color: #6E66F2;
+    }
+
+    div {
+        display: block;
+    }
+
+    .calContainer {
+        font-size: 24px;
+        background-color: white;
+        max-width: 500px;
+        border-radius: 20px;
+        padding: 2%;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .top {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        background-color: white;
+        max-width: 500px;
+        border-radius: 20px;
+        padding: 2%;
+        margin: 40px 20px 20px 20px;
+    }
+
+    .buttonClear {
+        margin-right: 10px;
+        margin-left: 0;
+        border-radius: 50px;
+        width: 90px;
+        height: 90px;
+        color: white;
+        border: none;
+        margin: 5px 5px;
+        box-shadow: 3px 3px 3px #cccccc;
+        font-size: 30px;
+        background-color: #3F4557;
+    }
+
+    .frame {
+        font-size: 24px;
+        background-color: white;
+    @*max-width:720px;*@border-radius: 20px;
+        padding: 2%;
+        margin: 3% 35%;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    @*padding:2px;*@font-size: 30px;
+        width: 100px
+    }
+</style>
+<div class="frame">
+    <div class="grid-container">
+        <div class="grid-item-clear">
+            <button class="buttonClear" onclick="putClear()">
+                C
+            </button>
+        </div>
+        <div class="inputBox" id="output">
+            <p class="inputText" id="numText"></p>
+            <script>
+                document.getElementById("numText").innerHTML = "Enter Number";
+            </script>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item"><button class="buttonCal" onclick="put1()">1</button></div>
+        <div class="grid-item"><button class="buttonCal" onclick="put2()">2</button></div>
+        <div class="grid-item"><button class="buttonCal" onclick="put3()">3</button></div>
+        <div class="grid-item"><button class="buttonCal operator" onclick="putAdd()">+</button></div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put4()">4</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put5()">5</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put6()">6</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal operator" onclick="putSub()">-</button>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put7()">7</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put8()">8</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put9()">9</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal operator" onclick="putMultiply()">*</button>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <button class="buttonCal" onclick="put0()">0</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal" onclick="putDot()">.</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal operator" onclick="putEqual()">=</button>
+        </div>
+        <div class="grid-item">
+            <button class="buttonCal operator" onclick="putDevide()">/</button>
+        </div>
+    </div>
+</div>

@@ -11,7 +11,7 @@ public class NewsReader implements NewsSubscriber {
 
     @Override
     public void update(String content) {
-        System.out.println(name+" => gets update: "+content);
+        System.out.println(name+" => gets : "+content);
     }
 
     public String getName() {

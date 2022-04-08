@@ -21,7 +21,7 @@ public class NewsPublisher {
     }
 
     public void notifySubscriber(String content) {
-        System.out.println("*** Publisher: "+name+" is sending "+mainState.getTopic()+" news to subscribers ***");
+        System.out.println("*** Publisher "+mainState.getTopic()+" news to subscribers ***");
         for (NewsSubscriber s : subscribers) {
             s.update(content);
         }
